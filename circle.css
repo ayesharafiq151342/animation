@@ -1,0 +1,211 @@
+.container{
+    position:relative;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  padding: 30px 60px;
+  box-shadow: 0px 25px 50px rgb(0, 0, 0.5);
+  overflow: hidden;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-top: 15%;
+margin-left: 30%;
+width:30%;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    left: 2px;
+    top:2px;
+    width: 80%;
+    background-color: rgb(255,255, 255,0.5);
+
+}
+.container span:nth-child(1){
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left:0px;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to right,#0c002b,#1779ff);
+    animation: anim1 2s linear infinite ;
+}
+@keyframes  anim1{
+    0%{
+transform: translatex(-100%);
+    }
+    100%{
+        transform: translatex(100%);
+    }
+}
+.container span:nth-child(2){
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to bottom,#0c002b,#1779ff);
+    animation: anim2 2s linear infinite ;
+}
+@keyframes  anim2{
+    0%{
+transform: translatey(-100%);
+    }
+    100%{
+        transform: translatey(100%);
+    }}
+
+
+
+.container span:nth-child(3){
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left:0px;
+    bottom: 0px;
+     background: linear-gradient(to left,#0c002b,#1779ff);
+     animation: anim3 2s linear infinite ;
+    }
+    @keyframes  anim3{
+        0%{
+    transform: translatex(100%);
+        }
+        100%{
+            transform: translatex(-100%);
+        }}
+.container span:nth-child(4){
+    position: absolute;
+    width: 2px;
+    height: 100%;
+   bottom:0px ;
+     left: 0px;
+    background: linear-gradient(to bottom,#0c002b,#1779ff);
+    animation: anim4 2s linear infinite ;
+}
+@keyframes  anim4{
+    0%{
+transform: translatey(100%);
+    }
+    100%{
+        transform: translatey(-100%);
+    }}
+.container:hover{
+    /* background-color:rgb(226, 110, 199); */
+  box-shadow: 0px 25px 50px rgb(82, 19, 67);;
+
+}
+.facebook , .instagram {
+   
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+  margin-left: 40px;
+    border: 2px solid  #0866ff;
+}
+.f-child{
+    /* border: 3px solid rgb(236, 236, 236); */
+    width:70px;
+    height: 70px;
+   /* color: white; */
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+.f-child:hover{
+    background-color: #0866ff;
+    transform: scale(0.80);
+   
+}
+.instagram {
+    /* width:10%; */
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-left: 40px;
+    border: 2px solid  #9b1402 ;
+}
+.i-child{
+       /* border: 3px solid rgb(236, 236, 236); */
+       width:70px;
+       height: 70px;
+      /* color: white; */
+      display: flex;
+       justify-content: center;
+       align-items: center;
+       transition-property: all;
+       transition-duration: 1s;
+       transition-delay: 1s;
+       transition-timing-function: ease-in-out;
+   }
+   .i-child:hover{
+    background-color: #8d1500;
+    transform: scale(0.80);
+   
+}
+.linkdin{
+    /* width:10%; */
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-left: 40px;
+    border: 2px solid  #016f91 ;
+}
+.l-child{
+       /* border: 3px solid rgb(236, 236, 236); */
+       width:70px;
+       height: 70px;
+      /* color: white; */
+      display: flex;
+       justify-content: center;
+       align-items: center;
+       transition-property: all;
+       transition-duration: 1s;
+       transition-delay: 1s;
+       transition-timing-function: ease-in-out;
+   }
+   .l-child:hover{
+    background-color: #04a8dc;
+    transform: scale(0.80);
+   
+}
+
+.Whatsup{
+    /* width:10%; */
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-left: 40px;
+  border: 3px solid rgb(2, 165, 56);
+}
+.w-child{
+       /* border: 3px solid rgb(236, 236, 236); */
+       width:70px;
+       height: 70px;
+      /* color: white; */
+      display: flex;
+       justify-content: center;
+       align-items: center;
+       transition-property: all;
+       transition-duration: 1s;
+       transition-delay: 1s;
+       transition-timing-function: ease-in-out;
+   }
+   .w-child:hover{
+    background-color: #008800;
+    transform: scale(0.80);
+   
+}
